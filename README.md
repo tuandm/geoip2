@@ -10,6 +10,9 @@ The database file is included. No need to download and construct the Reader inst
   include_once "vendor/autoload.php";
   
   $reader = new Reader();
-  $record = $reader->city('52.192.103.163'); // Tokyo
+  // Or construct with mmdb file
+  // $reader = new Reader('/path/to/mmdb_file');
+  $record = $reader->city('52.192.103.163');
 
+  echo $record->city->name; // Tokyo
 ```
