@@ -1,4 +1,17 @@
 {
+    "name": "tuandm/geoip2",
+    "description": "Extended MaxMind GeoIP2 PHP API",
+    "keywords": ["geoip", "geoip2", "geolocation", "ip", "maxmind"],
+    "homepage": "https://github.com/tuandm/geoip2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tuan Duong",
+            "email": "bacduong@gmail.com",
+            "homepage": "https://github.com/tuandm"
+        }
+    ],
     "require": {
         "geoip2/geoip2": "~2.0"
     },
