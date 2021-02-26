@@ -15,4 +15,8 @@ The database file is included. No need to download the database file (http://geo
   $record = $reader->city('52.192.103.163');
 
   echo $record->city->name; // Tokyo
+
+  // We can also create Reader instance for reading country database
+  $reader = Reader::forCountry();
+  $record = $reader->country('52.192.103.163');
 ```

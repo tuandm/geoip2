@@ -40,4 +40,28 @@ class Reader extends \GeoIp2\Database\Reader
 
         parent::__construct($filename, $locales);
     }
+
+    /**
+     * Initialize Reader instance for fetching GeoIP2-City database
+     *
+     * @param array|string[] $locales
+     * @return static
+     */
+    public static function forCity(array $locales = ['en'])
+    {
+        $filename = dirname(__FILE__) . '/../../resources/GeoLite2-City.mmdb';
+        return new static($filename, $locales);
+    }
+
+    /**
+     * Initialize Reader instance for fetching GeoIP2-Country database
+     *
+     * @param array|string[] $locales
+     * @return static
+     */
+    public static function forCountry(array $locales = ['en'])
+    {
+        $filename = dirname(__FILE__) . '/../../resources/GeoLite2-Country.mmdb';
+        return new static($filename, $locales);
+    }
 }
